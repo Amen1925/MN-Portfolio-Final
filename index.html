@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Cinematic Audio Portfolio – Amen Allah Lamrani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script><!-- Canva SDKs -->
+  <script src="/_sdk/element_sdk.js"></script><!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="Style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="m-0 p-0">
+  <main class="app-wrapper w-full h-full animated-bg text-slate-100 relative overflow-y-auto"><!-- Film grain texture -->
+   <div class="grain-overlay"></div><!-- Cinematic vignette -->
+   <div class="vignette"></div><!-- Parallax layers -->
+   <div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"><!-- Layer 1: Deep background -->
+    <div class="parallax-layer parallax-layer-1">
+     <svg class="w-full h-full" viewbox="0 0 1920 1080" preserveaspectratio="xMidYMid slice"><defs>
+       <radialgradient id="glow1" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#C9A961" stop-opacity="0.1" />
+        <stop offset="100%" stop-color="#C9A961" stop-opacity="0" />
+       </radialgradient>
+      </defs> <circle cx="300" cy="200" r="150" fill="url(#glow1)" /> <circle cx="1600" cy="800" r="200" fill="url(#glow1)" />
+     </svg>
+    </div><!-- Layer 2: Mid background -->
+    <div class="parallax-layer parallax-layer-2">
+     <svg class="w-full h-full" viewbox="0 0 1920 1080" preserveaspectratio="xMidYMid slice"><defs>
+       <radialgradient id="glow2" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#8B7355" stop-opacity="0.08" />
+        <stop offset="100%" stop-color="#8B7355" stop-opacity="0" />
+       </radialgradient>
+      </defs> <circle cx="1400" cy="300" r="180" fill="url(#glow2)" /> <circle cx="500" cy="700" r="220" fill="url(#glow2)" />
+     </svg>
+    </div><!-- Layer 3: Front background -->
+    <div class="parallax-layer parallax-layer-3">
+     <svg class="w-full h-full" viewbox="0 0 1920 1080" preserveaspectratio="xMidYMid slice"><defs>
+       <radialgradient id="glow3" cx="50%" cy="50%">
+        <stop offset="0%" stop-color="#C9A961" stop-opacity="0.06" />
+        <stop offset="100%" stop-color="#C9A961" stop-opacity="0" />
+       </radialgradient>
+      </defs> <circle cx="960" cy="540" r="300" fill="url(#glow3)" />
+     </svg>
+    </div>
+   </div><!-- 3D Geometric shapes -->
+   <div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"><!-- Cubes -->
+    <svg class="geometric-shape" style="left: 10%; top: 15%; width: 120px; height: 120px; animation-delay: 0s;" viewbox="0 0 100 100"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="none" stroke="#C9A961" stroke-width="0.5" opacity="0.6" /> <polygon points="50,10 90,30 50,50 10,30" fill="#C9A961" opacity="0.1" /> <polygon points="50,50 90,30 90,70 50,90" fill="#C9A961" opacity="0.15" /> <polygon points="50,50 10,30 10,70 50,90" fill="#C9A961" opacity="0.08" />
+    </svg>
+    <svg class="geometric-shape" style="left: 75%; top: 60%; width: 100px; height: 100px; animation-delay: 5s;" viewbox="0 0 100 100"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="none" stroke="#8B7355" stroke-width="0.5" opacity="0.6" /> <polygon points="50,10 90,30 50,50 10,30" fill="#8B7355" opacity="0.1" /> <polygon points="50,50 90,30 90,70 50,90" fill="#8B7355" opacity="0.15" /> <polygon points="50,50 10,30 10,70 50,90" fill="#8B7355" opacity="0.08" />
+    </svg>
+    <svg class="geometric-shape" style="left: 85%; top: 20%; width: 80px; height: 80px; animation-delay: 10s;" viewbox="0 0 100 100"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30" fill="none" stroke="#C9A961" stroke-width="0.5" opacity="0.6" /> <polygon points="50,10 90,30 50,50 10,30" fill="#C9A961" opacity="0.1" /> <polygon points="50,50 90,30 90,70 50,90" fill="#C9A961" opacity="0.15" /> <polygon points="50,50 10,30 10,70 50,90" fill="#C9A961" opacity="0.08" />
+    </svg><!-- Pyramids -->
+    <svg class="geometric-shape" style="left: 20%; top: 70%; width: 90px; height: 90px; animation-delay: 3s;" viewbox="0 0 100 100"><polygon points="50,20 80,80 20,80" fill="none" stroke="#C9A961" stroke-width="0.5" opacity="0.6" /> <polygon points="50,20 80,80 50,60" fill="#C9A961" opacity="0.12" /> <polygon points="50,20 20,80 50,60" fill="#C9A961" opacity="0.08" /> <line x1="50" y1="60" x2="50" y2="80" stroke="#C9A961" stroke-width="0.5" opacity="0.4" />
+    </svg>
+    <svg class="geometric-shape" style="left: 60%; top: 35%; width: 110px; height: 110px; animation-delay: 8s;" viewbox="0 0 100 100"><polygon points="50,20 80,80 20,80" fill="none" stroke="#8B7355" stroke-width="0.5" opacity="0.6" /> <polygon points="50,20 80,80 50,60" fill="#8B7355" opacity="0.12" /> <polygon points="50,20 20,80 50,60" fill="#8B7355" opacity="0.08" /> <line x1="50" y1="60" x2="50" y2="80" stroke="#8B7355" stroke-width="0.5" opacity="0.4" />
+    </svg><!-- Octahedrons -->
+    <svg class="geometric-shape" style="left: 40%; top: 25%; width: 95px; height: 95px; animation-delay: 6s;" viewbox="0 0 100 100"><polygon points="50,10 80,50 50,90 20,50" fill="none" stroke="#C9A961" stroke-width="0.5" opacity="0.6" /> <polygon points="50,10 80,50 50,50" fill="#C9A961" opacity="0.12" /> <polygon points="50,10 20,50 50,50" fill="#C9A961" opacity="0.08" /> <polygon points="50,50 80,50 50,90" fill="#C9A961" opacity="0.15" /> <polygon points="50,50 20,50 50,90" fill="#C9A961" opacity="0.1" />
+    </svg>
+    <svg class="geometric-shape" style="left: 15%; top: 45%; width: 85px; height: 85px; animation-delay: 12s;" viewbox="0 0 100 100"><polygon points="50,10 80,50 50,90 20,50" fill="none" stroke="#8B7355" stroke-width="0.5" opacity="0.6" /> <polygon points="50,10 80,50 50,50" fill="#8B7355" opacity="0.12" /> <polygon points="50,10 20,50 50,50" fill="#8B7355" opacity="0.08" /> <polygon points="50,50 80,50 50,90" fill="#8B7355" opacity="0.15" /> <polygon points="50,50 20,50 50,90" fill="#8B7355" opacity="0.1" />
+    </svg>
+   </div><!-- Cinematic light rays -->
+   <div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+    <div class="light-ray" style="left: 15%; animation-delay: 0s;"></div>
+    <div class="light-ray" style="left: 35%; animation-delay: 2s;"></div>
+    <div class="light-ray" style="left: 55%; animation-delay: 4s;"></div>
+    <div class="light-ray" style="left: 75%; animation-delay: 6s;"></div>
+    <div class="light-ray" style="left: 85%; animation-delay: 3s;"></div>
+   </div><!-- Floating particles -->
+   <div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+    <div class="particle" style="left: 5%; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 15%; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 25%; animation-delay: 4s;"></div>
+    <div class="particle" style="left: 35%; animation-delay: 1s;"></div>
+    <div class="particle" style="left: 45%; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 55%; animation-delay: 5s;"></div>
+    <div class="particle" style="left: 65%; animation-delay: 2.5s;"></div>
+    <div class="particle" style="left: 75%; animation-delay: 4.5s;"></div>
+    <div class="particle" style="left: 85%; animation-delay: 1.5s;"></div>
+    <div class="particle" style="left: 95%; animation-delay: 3.5s;"></div>
+   </div><!-- Main content container -->
+   <div class="relative z-10 flex flex-col min-h-full w-full"><!-- HEADER -->
+    <header class="w-full border-b border-[#8B7355]/40 bg-black/95 backdrop-blur-xl sticky top-0 z-50 shadow-[0_8px_40px_rgba(0,0,0,0.9)]">
+     <div class="max-w-7xl mx-auto px-6 py-6 md:py-7">
+      <div class="flex flex-col items-center gap-5"><!-- Title -->
+       <div class="title-reveal text-center">
+        <h1 id="site-title" class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#B8860B] cursor-pointer hover:text-[#D4AF37] transition-all duration-500 mb-2 whitespace-nowrap" onclick="navigateTo('home')" style="text-shadow: 0 0 40px rgba(184, 134, 11, 0.8), 0 0 80px rgba(139, 115, 85, 0.5), 0 6px 25px rgba(0, 0, 0, 0.9); letter-spacing: 0.12em;">AMEN ALLAH LAMRANI</h1>
+        <p class="text-sm md:text-base text-[#8B7355] tracking-[0.2em] uppercase whitespace-nowrap" style="text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);"><span id="site-subtitle">Audio Engineer • Sound Designer</span></p>
+       </div><!-- Navigation -->
+       <nav aria-label="Main navigation" class="title-reveal" style="animation-delay: 0.2s;">
+        <ul class="flex flex-wrap justify-center gap-6 text-xs md:text-sm tracking-[0.25em] uppercase">
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="home">Home</a></li>
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="about">About</a></li>
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="portfolio">Portfolio</a></li>
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="showreel">Showreel</a></li>
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="awards">Awards</a></li>
+         <li><a href="#" class="nav-link focus-visible-outline text-slate-400 hover:text-[#B8860B] transition-colors duration-300" data-page="contact">Contact</a></li>
+        </ul>
+       </nav>
+      </div>
+     </div>
+    </header><!-- HOME PAGE -->
+    <div id="page-home" class="page active flex-1">
+     <section class="w-full relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-32">
+       <div class="grid md:grid-cols-2 gap-12 items-center"><!-- Left: Text Content -->
+        <div class="space-y-8">
+         <div class="title-reveal">
+          <h2 id="home-title" class="text-4xl md:text-6xl font-bold text-[#B8860B] leading-tight" style="text-shadow: 0 0 30px rgba(184, 134, 11, 0.6), 0 4px 20px rgba(0, 0, 0, 0.8);">Shaping Emotion Through Sound</h2>
+          <div class="h-1 w-24 bg-gradient-to-r from-[#B8860B] to-transparent mt-6 shadow-lg shadow-[#B8860B]/60"></div>
+         </div>
+         <p id="home-text" class="title-reveal text-base md:text-lg text-slate-300 leading-relaxed" style="animation-delay: 0.2s;">I design immersive soundscapes that amplify narrative tension and emotional depth. From atmospheric layers to precise Foley work, my approach blends technical craft with storytelling instinct, building worlds that resonate across drama, sci-fi, horror, and war cinema.</p><button type="button" class="cinema-button focus-visible-outline title-reveal inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-[#B8860B] to-[#6B5D4F] text-white font-bold tracking-[0.2em] uppercase rounded-sm transition-all duration-300" style="animation-delay: 0.4s;" onclick="navigateTo('showreel')"> <span id="home-button-text">Watch Showreel</span>
+          <svg class="w-5 h-5" viewbox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" />
+          </svg></button>
+        </div><!-- Right: Sound Wave Visualization -->
+        <div class="title-reveal flex items-center justify-center" style="animation-delay: 0.6s;">
+         <div class="relative w-full max-w-md">
+          <div class="absolute inset-0 bg-gradient-to-r from-[#C9A961]/40 to-[#8B7355]/40 blur-3xl animate-pulse"></div>
+          <div class="relative card-3d legendary-glow bg-black/70 backdrop-blur-md border-2 border-[#C9A961]/50 rounded-lg p-8 shadow-[0_0_60px_rgba(201,169,97,0.3)]">
+           <div class="sound-wave">
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+            <div class="sound-bar"></div>
+           </div>
+           <div class="mt-6 flex items-center justify-center text-xs text-slate-400"><span class="flex items-center gap-2"> <span class="w-2 h-2 rounded-full bg-[#C9A961] animate-pulse shadow-lg shadow-[#C9A961]/80"></span> LIVE AUDIO </span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div><!-- ABOUT PAGE -->
+    <div id="page-about" class="page flex-1">
+     <section class="w-full relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+       <div class="spotlight-sweep"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+       <div class="grid md:grid-cols-5 gap-12 items-center"><!-- Portrait -->
+        <div class="md:col-span-2">
+         <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-[#C9A961]/50 to-[#8B7355]/50 blur-3xl animate-pulse"></div>
+          <div class="relative film-strip bg-black/80 backdrop-blur-md border-2 border-[#C9A961]/50 rounded-lg overflow-hidden shadow-[0_25px_70px_rgba(0,0,0,0.6)]">
+           <div class="aspect-[3/4] flex items-center justify-center p-8">
+            <svg viewbox="0 0 200 260" class="w-full h-full opacity-50"><defs>
+              <lineargradient id="portrait-gradient" x1="0" x2="1" y1="0" y2="1">
+               <stop offset="0%" stop-color="#C9A961" />
+               <stop offset="100%" stop-color="#8B7355" />
+              </lineargradient>
+             </defs> <circle cx="100" cy="80" r="45" fill="url(#portrait-gradient)" opacity="0.7" /> <path d="M40 220C45 170 65 150 100 150C135 150 155 170 160 220Z" fill="#1a1a1a" /> <path d="M52 215C60 175 80 160 100 160C120 160 140 175 148 215Z" fill="#2a2a2a" /> <path d="M50 85C50 50 70 30 100 30C130 30 150 50 150 85" stroke="#C9A961" stroke-width="3" stroke-linecap="round" opacity="0.5" /> <rect x="42" y="72" width="12" height="32" rx="6" fill="#1a1a1a" /> <rect x="146" y="72" width="12" height="32" rx="6" fill="#1a1a1a" />
+            </svg>
+           </div>
+          </div>
+         </div>
+        </div><!-- Text Content -->
+        <div class="md:col-span-3 space-y-6">
+         <div>
+          <h2 id="about-title" class="text-3xl md:text-5xl font-bold text-[#C9A961] gold-3d mb-4" style="text-shadow: 0 0 30px rgba(201, 169, 97, 0.5);">About Me</h2>
+          <div class="h-1 w-20 bg-gradient-to-r from-[#C9A961] to-transparent shadow-lg shadow-[#C9A961]/50"></div>
+         </div>
+         <p id="about-text" class="text-base md:text-lg text-slate-300 leading-relaxed">Amen Allah Lamrani is a Tunisian Audio Engineer and Sound Designer focused on cinematic sound creation. His work combines technical precision with emotional storytelling, building depth, tension, and atmosphere in every project. <br><br>
+           Specializing in sound editing, Foley, production sound, and mixing, he crafts immersive soundscapes that elevate narrative impact across drama, sci-fi, horror, and war films.</p>
+         <div class="flex flex-wrap gap-3 pt-4"><span class="skill-badge px-4 py-2 bg-[#C9A961]/15 border border-[#C9A961]/50 rounded-sm text-sm text-[#C9A961] tracking-wider cursor-default shadow-[0_0_25px_rgba(201,169,97,0.15)]">SOUND DESIGN</span> <span class="skill-badge px-4 py-2 bg-[#C9A961]/15 border border-[#C9A961]/50 rounded-sm text-sm text-[#C9A961] tracking-wider cursor-default shadow-[0_0_25px_rgba(201,169,97,0.15)]">FOLEY</span> <span class="skill-badge px-4 py-2 bg-[#C9A961]/15 border border-[#C9A961]/50 rounded-sm text-sm text-[#C9A961] tracking-wider cursor-default shadow-[0_0_25px_rgba(201,169,97,0.15)]">MIXING</span> <span class="skill-badge px-4 py-2 bg-[#C9A961]/15 border border-[#C9A961]/50 rounded-sm text-sm text-[#C9A961] tracking-wider cursor-default shadow-[0_0_25px_rgba(201,169,97,0.15)]">SOUND EDITING</span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div><!-- PORTFOLIO PAGE -->
+    <div id="page-portfolio" class="page flex-1">
+     <section class="w-full relative">
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+       <div class="text-center mb-16">
+        <h2 id="portfolio-title" class="text-3xl md:text-5xl font-bold text-[#C9A961] gold-3d mb-4" style="text-shadow: 0 0 30px rgba(201, 169, 97, 0.5);" data-lang-key="portfolio_title">Portfolio</h2>
+        <div class="h-1 w-20 bg-gradient-to-r from-transparent via-[#C9A961] to-transparent mx-auto mb-6 shadow-lg shadow-[#C9A961]/50"></div>
+        <p id="portfolio-subtitle" class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto" data-lang-key="portfolio_subtitle">A selection of my audio work for cinematic projects.</p>
+       </div><!-- Feature Films Section -->
+       <div class="mb-16">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#C9A961] mb-8 text-center" style="text-shadow: 0 0 20px rgba(201, 169, 97, 0.4);" data-lang-key="portfolio_feature_films">Feature Films</h3>
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"><!-- The Needle -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#0a0f14] to-[#050810] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#050810" /> <path d="M100 30 L100 90 M80 50 L100 30 L120 50" stroke="#C9A961" stroke-width="3" fill="none" /> <circle cx="100" cy="90" r="5" fill="#C9A961" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider" data-lang-key="tag_drama">
+            DRAMA
+           </div>
+          </div>
+          <div class="p-6">
+           <h4 class="text-xl font-bold text-[#C9A961] mb-3" data-lang-key="project_needle_title">The Needle</h4>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4" data-lang-key="project_needle_role">Foley Artist • Sound Editor</p>
+           <p class="text-sm text-slate-300 leading-relaxed" data-lang-key="project_needle_desc">A feature film about a young Tunisian couple facing a critical decision after the birth of their intersex child. I worked as Sound Editor and Foley Artist, shaping the film's soundscape and emotional depth.</p>
+          </div>
+         </article>
+        </div>
+       </div><!-- Short Films Section -->
+       <div>
+        <h3 class="text-2xl md:text-3xl font-bold text-[#C9A961] mb-8 text-center" style="text-shadow: 0 0 20px rgba(201, 169, 97, 0.4);" data-lang-key="portfolio_short_films">Short Films</h3><!-- Featured Project -->
+        <article class="cinema-card card-3d legendary-glow glow-border mb-12 bg-black/70 backdrop-blur-md border-2 border-[#C9A961]/50 rounded-lg overflow-hidden shadow-[0_25px_90px_rgba(201,169,97,0.35)]">
+         <div class="grid md:grid-cols-2 gap-0">
+          <div class="relative aspect-video md:aspect-auto bg-gradient-to-br from-[#1a0f0a] via-[#0a0a0f] to-[#000000] flex items-center justify-center p-8">
+           <svg viewbox="0 0 400 300" class="w-full h-full opacity-35"><defs>
+             <lineargradient id="scene-grad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#C9A961" stop-opacity="0.4" />
+              <stop offset="100%" stop-color="#8B7355" stop-opacity="0.15" />
+             </lineargradient>
+            </defs> <rect width="400" height="300" fill="#000000" /> <path d="M40 0L230 300H0Z" fill="url(#scene-grad)" /> <rect x="150" y="200" width="200" height="40" fill="#0a0a0a" /> <circle cx="225" cy="180" r="20" fill="#1a1a1a" /> <polyline points="260,100 280,100 290,85 300,115 310,100 330,100" fill="none" stroke="#C9A961" stroke-width="2" />
+           </svg>
+           <div class="absolute top-4 left-4 px-3 py-1 bg-[#C9A961]/25 backdrop-blur-sm border border-[#C9A961]/50 rounded text-xs text-[#C9A961] tracking-wider shadow-lg" data-lang-key="featured_label">
+            FEATURED
+           </div>
+          </div>
+          <div class="p-8 md:p-12 flex flex-col justify-center">
+           <h4 class="text-2xl md:text-3xl font-bold text-[#C9A961] mb-3" style="text-shadow: 0 0 20px rgba(201, 169, 97, 0.4);" data-lang-key="featured_title">A Quiet Place – Birth Scene</h4>
+           <p class="text-xs md:text-sm text-slate-400 uppercase tracking-[0.2em] mb-4" data-lang-key="featured_role">Sound Designer • Foley Artist • Re-Recording Mixer</p>
+           <p class="text-sm md:text-base text-slate-300 leading-relaxed mb-6" data-lang-key="featured_desc">A full sonic reconstruction of the childbirth sequence from A Quiet Place, exploring silence, tension, and emotional intensity in horror cinema.</p>
+           <div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-[#C9A961]/15 border border-[#C9A961]/40 rounded-sm text-xs text-[#C9A961]" data-lang-key="tag_horror">HORROR</span> <span class="px-3 py-1 bg-[#C9A961]/15 border border-[#C9A961]/40 rounded-sm text-xs text-[#C9A961]">2023</span>
+           </div>
+          </div>
+         </div>
+        </article><!-- Project Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Rolling Dice -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1a0f0a] to-[#0a0604] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#0a0604" /> <circle cx="100" cy="60" r="35" fill="#2d1810" opacity="0.5" /> <path d="M70 40 L130 40 L130 80 L70 80 Z" fill="none" stroke="#C9A961" stroke-width="2" /> <circle cx="85" cy="55" r="4" fill="#C9A961" /> <circle cx="115" cy="65" r="4" fill="#C9A961" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            WESTERN
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">Rolling Dice</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Boom Operator • Sound Editor</p>
+           <p class="text-sm text-slate-300 leading-relaxed">A gritty western following two outlaws on the run from their violent past. As boom operator, I captured authentic location sound in harsh desert conditions. In post-production, I edited dialogue and ambient tracks to preserve the raw, windswept atmosphere of the frontier.</p>
+          </div>
+         </article><!-- La Pièce -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#0a0f1a] to-[#04060a] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#04060a" /> <circle cx="100" cy="60" r="30" fill="none" stroke="#C9A961" stroke-width="2" /> <circle cx="100" cy="60" r="20" fill="none" stroke="#C9A961" stroke-width="2" /> <circle cx="100" cy="60" r="10" fill="#C9A961" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            RADIO
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">La Pièce</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Writer • Sound Designer • Mixer</p>
+           <p class="text-sm text-slate-300 leading-relaxed">An immersive radio fiction set during the Tunisian revolution, exploring themes of confinement and political awakening. I wrote the script, designed the complete soundscape using spatial audio techniques, and mixed the final piece to create a visceral listening experience that transports audiences into the heart of the uprising.</p>
+          </div>
+         </article><!-- The Last Letter -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1a1410] to-[#1a0a06] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#0f0a08" /> <path d="M60 40 L80 60 L60 80 M90 40 L110 60 L90 80 M120 40 L140 60 L120 80" stroke="#C9A961" stroke-width="3" fill="none" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            WAR
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">The Last Letter</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Boom Operator • Sound Editor</p>
+           <p class="text-sm text-slate-300 leading-relaxed">A poignant war drama about a soldier torn between duty and family. I operated boom on location, capturing clean dialogue amid challenging combat sequences. During editing, I shaped the sonic contrast between the chaos of battle and the intimate quiet of personal moments, emphasizing the emotional weight of sacrifice.</p>
+          </div>
+         </article><!-- Rotten Salt -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#0a0f14] to-[#050810] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#050810" /> <path d="M100 30 Q80 60 100 90 Q120 60 100 30" fill="none" stroke="#C9A961" stroke-width="2" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            DRAMA
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">Rotten Salt</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Sound Engineer • Mixer</p>
+           <p class="text-sm text-slate-300 leading-relaxed">An intimate character study exploring grief, denial, and the slow process of acceptance. I engineered production sound and mixed the final audio, focusing on subtle environmental details and silence to reflect the protagonist's emotional isolation and gradual healing.</p>
+          </div>
+         </article><!-- Salvation -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#0a1418] to-[#050a0e] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#050a0e" /> <circle cx="100" cy="50" r="18" fill="#C9A961" opacity="0.25" /> <rect x="85" y="68" width="30" height="40" rx="3" fill="#C9A961" opacity="0.25" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            SCI-FI
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">Salvation</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Boom Operator • Sound Editor</p>
+           <p class="text-sm text-slate-300 leading-relaxed">A thought-provoking sci-fi drama about a humanoid robot questioning its existence and purpose. As boom operator, I captured nuanced performances in sterile, futuristic environments. In post, I edited mechanical and synthetic sound elements to create an otherworldly sonic identity that blurs the line between human and machine.</p>
+          </div>
+         </article><!-- The Other Side -->
+         <article class="cinema-card card-3d embossed bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg overflow-hidden">
+          <div class="relative aspect-video bg-gradient-to-br from-[#14100a] to-[#0a0806] flex items-center justify-center">
+           <svg viewbox="0 0 200 120" class="w-full h-full opacity-25"><rect width="200" height="120" fill="#0a0806" /> <rect x="60" y="35" width="80" height="50" rx="4" fill="none" stroke="#C9A961" stroke-width="2" /> <line x1="100" y1="35" x2="100" y2="85" stroke="#C9A961" stroke-width="2" />
+           </svg>
+           <div class="absolute top-3 right-3 px-2 py-1 bg-black/70 backdrop-blur-sm rounded text-[0.65rem] text-[#C9A961] tracking-wider">
+            DRAMA
+           </div>
+          </div>
+          <div class="p-6">
+           <h3 class="text-xl font-bold text-[#C9A961] mb-3">The Other Side</h3>
+           <p class="text-xs text-slate-400 uppercase tracking-wider mb-4">Sound Engineer • Mixer</p>
+           <p class="text-sm text-slate-300 leading-relaxed">A family drama centered on a young artist's struggle for identity and acceptance. I engineered location sound and mixed the final audio, emphasizing the tension between domestic spaces and creative freedom through careful balance of dialogue clarity and environmental texture.</p>
+          </div>
+         </article>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div><!-- SHOWREEL PAGE -->
+    <div id="page-showreel" class="page flex-1">
+     <section class="w-full relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+       <div class="spotlight-sweep"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+       <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+         <div>
+          <h2 id="showreel-title" class="text-3xl md:text-5xl font-bold text-[#C9A961] mb-4" style="text-shadow: 0 0 30px rgba(201, 169, 97, 0.5);" data-lang-key="showreel_title">Showreel</h2>
+          <div class="h-1 w-20 bg-gradient-to-r from-[#C9A961] to-transparent shadow-lg shadow-[#C9A961]/50"></div>
+         </div>
+         <p id="showreel-text" class="text-base md:text-lg text-slate-300 leading-relaxed" data-lang-key="showreel_text">A selection of my work in audio production for cinematic projects. This showreel highlights my focus on immersive atmospheres, narrative tension, and emotional precision across drama, sci-fi, horror, and war genres.</p>
+        </div>
+        <div>
+         <div class="cinema-card w-full relative glow-border bg-black/90 backdrop-blur-md border-2 border-[#C9A961]/50 rounded-lg overflow-hidden shadow-[0_35px_100px_rgba(0,0,0,0.7),0_0_70px_rgba(201,169,97,0.25)]">
+          <div class="relative aspect-video bg-black"><iframe src="https://www.youtube-nocookie.com/embed/oL50UqUN6uM?si=LEPq7jyDERCLA6Jj" title="Amen Allah Lamrani - Audio Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full h-full border-0"></iframe>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div><!-- AWARDS PAGE -->
+    <div id="page-awards" class="page flex-1">
+     <section class="w-full relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+       <div class="spotlight-sweep"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+       <div class="text-center mb-16">
+        <h2 id="awards-title" class="text-3xl md:text-5xl font-bold text-[#C9A961] mb-4" style="text-shadow: 0 0 30px rgba(201, 169, 97, 0.5);" data-lang-key="awards_title">Accolades &amp; Awards</h2>
+        <div class="h-1 w-20 bg-gradient-to-r from-transparent via-[#C9A961] to-transparent mx-auto mb-6 shadow-lg shadow-[#C9A961]/50"></div>
+        <svg class="w-14 h-14 mx-auto laurel-icon" viewbox="0 0 48 48" fill="none"><path d="M24 8C24 8 21 11 19 14C17 17 14 19 14 19C14 19 17 21 19 24C21 27 24 30 24 30" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" /> <path d="M24 8C24 8 27 11 29 14C31 17 34 19 34 19C34 19 31 21 29 24C27 27 24 30 24 30" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" /> <path d="M14 19C14 19 12 22 10 25C8 28 6 31 6 31" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" /> <path d="M34 19C34 19 36 22 38 25C40 28 42 31 42 31" stroke="#C9A961" stroke-width="2.5" stroke-linecap="round" /> <circle cx="24" cy="24" r="4" fill="#C9A961" />
+        </svg>
+       </div><!-- Featured Awards -->
+       <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <article class="cinema-card bg-gradient-to-br from-[#C9A961]/20 to-transparent backdrop-blur-md border-2 border-[#C9A961]/60 rounded-lg p-8 shadow-[0_25px_70px_rgba(201,169,97,0.25)]">
+         <div class="flex items-start gap-6">
+          <svg class="w-16 h-16 flex-shrink-0 laurel-icon" viewbox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" fill="#C9A961" opacity="0.15" /> <path d="M32 12C32 12 28 16 25 20C22 24 18 27 18 27C18 27 22 30 25 34C28 38 32 42 32 42" stroke="#C9A961" stroke-width="3" stroke-linecap="round" /> <path d="M32 12C32 12 36 16 39 20C42 24 46 27 46 27C46 27 42 30 39 34C36 38 32 42 32 42" stroke="#C9A961" stroke-width="3" stroke-linecap="round" /> <circle cx="32" cy="32" r="7" fill="#C9A961" />
+          </svg>
+          <div class="flex-1">
+           <div class="inline-block px-4 py-1 bg-[#C9A961]/25 border border-[#C9A961]/50 rounded-sm mb-4"><span class="text-sm font-bold tracking-[0.2em] uppercase text-[#C9A961]" data-lang-key="award_first_prize">First Prize</span>
+           </div>
+           <h3 class="text-2xl font-bold text-[#C9A961] mb-2" data-lang-key="award_esad_title">ESAD Valedictorian</h3>
+           <p class="text-base text-slate-300 mb-2" data-lang-key="award_esad_desc">Sound &amp; Mixing Excellence</p>
+           <p class="text-sm text-slate-400">2023</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-gradient-to-br from-[#C9A961]/15 to-transparent backdrop-blur-sm border border-[#C9A961]/50 rounded-lg p-8">
+         <div class="flex items-start gap-6">
+          <svg class="w-16 h-16 flex-shrink-0 laurel-icon" viewbox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" fill="#C9A961" opacity="0.15" /> <path d="M32 12C32 12 28 16 25 20C22 24 18 27 18 27C18 27 22 30 25 34C28 38 32 42 32 42" stroke="#C9A961" stroke-width="3" stroke-linecap="round" /> <path d="M32 12C32 12 36 16 39 20C42 24 46 27 46 27C46 27 42 30 39 34C36 38 32 42 32 42" stroke="#C9A961" stroke-width="3" stroke-linecap="round" /> <circle cx="32" cy="32" r="7" fill="#C9A961" />
+          </svg>
+          <div class="flex-1">
+           <div class="inline-block px-4 py-1 bg-[#C9A961]/25 border border-[#C9A961]/50 rounded-sm mb-4"><span class="text-sm font-bold tracking-[0.2em] uppercase text-[#C9A961]" data-lang-key="award_first_prize">First Prize</span>
+           </div>
+           <h3 class="text-2xl font-bold text-[#C9A961] mb-2" data-lang-key="award_cmca_title">CMCA Mediterranean</h3>
+           <p class="text-base text-slate-300 mb-2" data-lang-key="award_cmca_desc">Short Film Competition</p>
+           <p class="text-sm text-slate-400">2024</p>
+          </div>
+         </div>
+        </article>
+       </div><!-- Official Selections -->
+       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_fifak_name">Kélibia International Amateur Film Festival</h3>
+           <p class="text-xs text-slate-400 mb-2">FIFAK • 2023</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_jcc_name">Carthage Film Festival</h3>
+           <p class="text-xs text-slate-400 mb-2">JCC • 2023</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_liftoff_name">Lift-Off Global Network</h3>
+           <p class="text-xs text-slate-400 mb-2">Lift-Off Sessions • 2023</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_hgff_name">Hollywood Guerrilla Film Festival</h3>
+           <p class="text-xs text-slate-400 mb-2">HGFF • 2023</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_yiff_name">Yeast International Film Festival</h3>
+           <p class="text-xs text-slate-400 mb-2">YIFF • 2024</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+        <article class="cinema-card bg-black/50 backdrop-blur-sm border border-[#C9A961]/30 rounded-lg p-6">
+         <div class="flex items-start gap-4 mb-3">
+          <svg class="w-10 h-10 flex-shrink-0" viewbox="0 0 32 32" fill="none"><path d="M16 4C16 4 14 6 13 8C12 10 10 11 10 11C10 11 12 12 13 14C14 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" /> <path d="M16 4C16 4 18 6 19 8C20 10 22 11 22 11C22 11 20 12 19 14C18 16 16 18 16 18" stroke="#8B7355" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <div class="flex-1">
+           <h3 class="text-base font-bold text-[#C9A961] mb-1" data-lang-key="festival_miff_name">Montecito International Film Festival</h3>
+           <p class="text-xs text-slate-400 mb-2">MIFF • 2024</p>
+           <p class="text-xs text-slate-300" data-lang-key="festival_selection">Official Selection</p>
+          </div>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+    </div><!-- CONTACT PAGE -->
+    <div id="page-contact" class="page flex-1">
+     <section class="w-full relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+       <div class="spotlight-sweep"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
+       <div class="text-center mb-16">
+        <h2 id="contact-title" class="text-3xl md:text-5xl font-bold text-[#C9A961] mb-4" style="text-shadow: 0 0 30px rgba(201, 169, 97, 0.5);" data-lang-key="contact_title">Let's Collaborate</h2>
+        <div class="h-1 w-20 bg-gradient-to-r from-transparent via-[#C9A961] to-transparent mx-auto mb-6 shadow-lg shadow-[#C9A961]/50"></div>
+        <p id="contact-text" class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto" data-lang-key="contact_text">For collaborations, sound design, or film projects</p>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12"><!-- Email Card --> <a href="mailto:lamrani.amenallah@gmail.com" class="cinema-card contact-glow focus-visible-outline bg-black/70 backdrop-blur-md border border-[#C9A961]/50 rounded-lg p-8 hover:border-[#C9A961]/70 transition-all duration-300">
+         <div class="flex items-start gap-5">
+          <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-[#C9A961]/25 to-[#8B7355]/25 border border-[#C9A961]/50 flex items-center justify-center">
+           <svg class="w-7 h-7" viewbox="0 0 24 24" fill="none"><path d="M3 8L10.89 13.26C11.5 13.67 12.5 13.67 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+          </div>
+          <div class="flex-1">
+           <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-2" data-lang-key="contact_email">Email</h3>
+           <p class="text-base text-[#C9A961] break-all">lamrani.amenallah@gmail.com</p>
+          </div>
+          <svg class="w-5 h-5 text-[#C9A961] opacity-60" viewbox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+         </div></a> <!-- Phone Card -->
+        <div class="cinema-card contact-glow bg-black/50 backdrop-blur-sm border border-[#C9A961]/40 rounded-lg p-8">
+         <div class="flex items-start gap-5">
+          <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-[#C9A961]/25 to-[#8B7355]/25 border border-[#C9A961]/50 flex items-center justify-center">
+           <svg class="w-7 h-7" viewbox="0 0 24 24" fill="none"><path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+          </div>
+          <div class="flex-1">
+           <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-2" data-lang-key="contact_phone">Phone</h3>
+           <p class="text-base text-[#C9A961]">+351 932 605 817</p>
+          </div>
+         </div>
+        </div><!-- LinkedIn Card --> <a href="https://linkedin.com/in/amen-allah-lamrani" target="_blank" rel="noopener noreferrer" class="cinema-card contact-glow focus-visible-outline bg-black/50 backdrop-blur-sm border border-[#C9A961]/40 rounded-lg p-8">
+         <div class="flex items-start gap-5">
+          <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-[#C9A961]/25 to-[#8B7355]/25 border border-[#C9A961]/50 flex items-center justify-center">
+           <svg class="w-7 h-7" viewbox="0 0 24 24" fill="none"><path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <path d="M6 9H2V21H6V9Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+          </div>
+          <div class="flex-1">
+           <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-2" data-lang-key="contact_linkedin">LinkedIn</h3>
+           <p class="text-base text-[#C9A961] break-all">linkedin.com/in/amen-allah-lamrani</p>
+          </div>
+          <svg class="w-5 h-5 text-[#C9A961] opacity-60" viewbox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+         </div></a> <!-- Location Card -->
+        <div class="cinema-card contact-glow bg-black/50 backdrop-blur-sm border border-[#C9A961]/40 rounded-lg p-8">
+         <div class="flex items-start gap-5">
+          <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-gradient-to-br from-[#C9A961]/25 to-[#8B7355]/25 border border-[#C9A961]/50 flex items-center justify-center">
+           <svg class="w-7 h-7" viewbox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+           </svg>
+          </div>
+          <div class="flex-1">
+           <h3 class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-2" data-lang-key="contact_location">Location</h3>
+           <p class="text-base text-[#C9A961]" data-lang-key="contact_location_value">Porto, Portugal</p>
+          </div>
+         </div>
+        </div>
+       </div><!-- Availability Badge -->
+       <div class="text-center">
+        <div class="inline-flex items-center gap-3 px-8 py-4 bg-[#C9A961]/20 backdrop-blur-md border-2 border-[#C9A961]/50 rounded-full shadow-[0_0_50px_rgba(201,169,97,0.35)]"><span class="w-3 h-3 rounded-full bg-[#C9A961] animate-pulse shadow-[0_0_15px_rgba(201,169,97,0.9)]"></span> <span class="text-sm text-[#C9A961] tracking-wider font-semibold" data-lang-key="contact_available">Available for new projects</span>
+        </div>
+       </div>
+      </div>
+     </section>
+    </div><!-- FOOTER -->
+    <footer class="w-full border-t border-[#C9A961]/40 bg-black/95 backdrop-blur-md shadow-[0_-15px_50px_rgba(0,0,0,0.6)]">
+     <div class="max-w-7xl mx-auto px-6 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+       <p>© <span id="footer-year"></span> Amen Allah Lamrani. <span data-lang-key="footer_rights">All rights reserved.</span></p>
+       <p class="tracking-[0.2em] uppercase" data-lang-key="footer_tagline">Crafting Cinematic Sound</p>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </main>
+  <script src="script.js">
+ 
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a954060340e6914',t:'MTc2NDk1NTYxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
+
